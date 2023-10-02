@@ -1,0 +1,39 @@
+.poster{
+    margin-left: 7px;
+}
+.poster_1{
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    
+}
+.pst{
+    margin-left: 2rem;
+}
+@media (max-width: 576px) {
+    .up-next-container {
+        padding: 10px; /* Adjust padding or any other styles as needed for small screens */
+    }
+
+    .poster_1{
+        display: flex;
+       
+      
+        
+    }
+
+    .right-poster-play {
+        /* Adjust styles for play icons on small devices */
+        width: 15px;
+        height: 15px;
+    }
+    .imge{
+        width: 200px;
+        text-align: center;
+        
+    }
+    .poster-con {
+        text-align: center;
+    }
+}

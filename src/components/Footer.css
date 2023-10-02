@@ -1,0 +1,44 @@
+.b1{
+    background-color:rgb(253, 179, 40);
+    border: none;
+}
+/* Footer.css */
+
+/* Default styles for larger screens */
+.d-flex {
+   display: flex;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .m-4 {
+    margin: 0px;
+    
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .d-flex {
+      flex-direction: column;
+      
+    }
+    .logos{
+        flex-direction: row;
+    }
+  
+    .m-4 {
+      margin: 0px;
+    }
+  }
+  
+  /* Additional responsive styles for even smaller screens if needed */
+  @media (max-width: 576px) {
+    /* Add your styles for smaller screens here */
+  }
+  

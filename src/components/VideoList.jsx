@@ -19,7 +19,7 @@ function VideoList({fetchUrl}) {
   return (
     
    <>
-  <div className='container'>
+  <div className='container-fluid'>
        <div>
            <h4 style={{color:'orange',fontWeight:'bold'}}>What to Watch</h4>
                <h5 style={{borderLeft:'4px solid orange',borderRadius:'1px',marginTop:'1.5rem',fontWeight:'bold',fontSize:'30px'}}><a  style={{color:'white',textDecoration:'none',marginRight:'10px',paddingLeft:'10px'}} href="">Top Picks</a><i className='icon' style={{marginTop:'10px'}} class="fa-solid fa-greater-than fa-xs"></i></h5>
@@ -27,17 +27,17 @@ function VideoList({fetchUrl}) {
            <p>Tv Shows and movies just for you</p>
        </div>
 
-  <div >
+  <div className=''>
          
   
-       <Carousel fade  >
+       <Carousel fade>
       {
         allMovies.map((item,index)=>(
-            <Carousel.Item>
+            <Carousel.Item >
 
         <div className='d-flex justify-content-evenly m-5'>
             
-        <Card style={{ width: '12rem' }}>
+        <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img variant="top" src={`${base_Url}/${item.poster_path}`} />
               <Card.Body>
                 <div className='d-flex align-items-center'>
@@ -59,7 +59,7 @@ function VideoList({fetchUrl}) {
               </Card.Body>
             </Card>
 
-            <Card style={{ width: '12rem' }}>
+            <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img variant="top" src={`${base_Url}/${allMovies[index+1]?.poster_path}`} />
               <Card.Body>
                 <div className='d-flex align-items-center'>
@@ -74,14 +74,14 @@ function VideoList({fetchUrl}) {
                     <Button  style={{color: "#0400ff"}} className='w-100 '  variant="secondary"><i class="fa-solid fa-plus"></i> Watchlist</Button>
                </div>
         
-               <div className='d-flex justify-content-center align-items-center mt-3'>
+               <div className='d-flex  align-items-center mt-3'>
                <div style={{fontWeight:'bold',color:'white'}}><i style={{paddingRight:'10px'}}  class="fa-solid fa-play"></i>   Trailer</div>
             
                </div>
               </Card.Body>
             </Card>
 
-            <Card style={{ width: '12rem' }}>
+            <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img variant="top" src={`${base_Url}/${allMovies[index+2]?.poster_path}`} />
               <Card.Body>
                 <div className='d-flex align-items-center'>
@@ -103,7 +103,7 @@ function VideoList({fetchUrl}) {
               </Card.Body>
             </Card>
 
-            <Card style={{ width: '12rem' }}>
+            <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img variant="top" src={`${base_Url}/${allMovies[index+3]?.poster_path}`} />
               <Card.Body>
                 <div className='d-flex align-items-center'>
@@ -125,7 +125,7 @@ function VideoList({fetchUrl}) {
               </Card.Body>
             </Card>
 
-            <Card style={{ width: '12rem' }}>
+            <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img  variant="top" src={`${base_Url}/${allMovies[index+4]?.poster_path}`} />
               <Card.Body>
                 <div className='d-flex align-items-center'>

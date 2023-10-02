@@ -36,12 +36,13 @@ function VideoList({fetchUrl}) {
             <Carousel.Item >
 
         <div className='d-flex justify-content-evenly m-5'>
-            
+        
+           
         <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img variant="top" src={`${base_Url}/${item.poster_path}`} />
               <Card.Body>
-                <div className='d-flex align-items-center'>
-                <i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i>
+                <div className='d-flex justify-content-center align-items-center'>
+                <div><i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i></div>
                     <div>{item.vote_average}</div>
                    <div style={{paddingLeft:'25px'}}> <i class="fa-regular fa-star" style={{color: "#0400ff"}}></i> </div>
                  </div>
@@ -58,12 +59,16 @@ function VideoList({fetchUrl}) {
                </div>
               </Card.Body>
             </Card>
+        
 
+
+         {
+          allMovies[index+1]&&
             <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img variant="top" src={`${base_Url}/${allMovies[index+1]?.poster_path}`} />
               <Card.Body>
-                <div className='d-flex align-items-center'>
-                <i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i>
+                <div className='d-flex justify-content-center align-items-center'>
+               <div> <i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i></div>
                     <div>{allMovies[index+1]?.vote_average}</div>
                    <div style={{paddingLeft:'25px'}}> <i class="fa-regular fa-star" style={{color: "#0400ff"}}></i> </div>
                  </div>
@@ -80,12 +85,16 @@ function VideoList({fetchUrl}) {
                </div>
               </Card.Body>
             </Card>
+}
+
+     {
+                allMovies[index+2]&&
 
             <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img variant="top" src={`${base_Url}/${allMovies[index+2]?.poster_path}`} />
               <Card.Body>
-                <div className='d-flex align-items-center'>
-                <i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i>
+                <div className='d-flex justify-content-center align-items-center'>
+               <div> <i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i></div>
                     <div>{allMovies[index+2]?.vote_average}</div>
                    <div style={{paddingLeft:'25px'}}> <i class="fa-regular fa-star" style={{color: "#0400ff"}}></i> </div>
                  </div>
@@ -102,12 +111,16 @@ function VideoList({fetchUrl}) {
                </div>
               </Card.Body>
             </Card>
+}
+
+{
+            allMovies[index+3]&&
 
             <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img variant="top" src={`${base_Url}/${allMovies[index+3]?.poster_path}`} />
               <Card.Body>
-                <div className='d-flex align-items-center'>
-                <i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i>
+                <div className='d-flex justify-content-center align-items-center'>
+               <div> <i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i></div>
                     <div>{allMovies[index+3]?.vote_average}</div>
                    <div style={{paddingLeft:'25px'}}> <i class="fa-regular fa-star" style={{color: "#0400ff"}}></i> </div>
                  </div>
@@ -124,12 +137,16 @@ function VideoList({fetchUrl}) {
                </div>
               </Card.Body>
             </Card>
+}
+{
+
+allMovies[index+4]&&
 
             <Card style={{ width: '16rem',marginBottom:'15px' }}>
               <Card.Img  variant="top" src={`${base_Url}/${allMovies[index+4]?.poster_path}`} />
               <Card.Body>
-                <div className='d-flex align-items-center'>
-                <i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i>
+                <div className='d-flex justify-content-center align-items-center'>
+              <div>  <i class="fa-solid fa-star" style={{color:"orange",paddingRight:"8px"}}></i></div>
                     <div>{allMovies[index+4]?.vote_average}</div>
                    <div style={{paddingLeft:'25px'}}> <i class="fa-regular fa-star" style={{color: "#0400ff"}}></i> </div>
                  </div>
@@ -146,6 +163,7 @@ function VideoList({fetchUrl}) {
                </div>
               </Card.Body>
             </Card>
+}
             
         </div>
         </Carousel.Item>
